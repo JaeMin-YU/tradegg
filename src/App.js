@@ -3,20 +3,26 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header> 
+        <div>
+          사이트 1
+          사이트 2
+        </div>
+        <div>
+          logo
+          판매등록
+          캐릭터 거래
+          아이템 거래
+          상품권몰
+          마이페이지
+          마일리지 충전
+          마일리지 출금
+          프로필 로고
+          하트 로고
+          알림 로고
+          검색 로고
+        </div>
       </header>
     </div>
   );
