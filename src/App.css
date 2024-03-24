@@ -1,75 +1,63 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  /* Background for test */
-  /* background-color: #282c34; */
 }
-sitenav{
+
+/* 여기서 부터 toptab css */
+toptab {
   position: fixed;
+  width: 100%;
+  height: 40px;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 70px;
-  background: #000000;
- } 
+  background-color: #000000;
+}
+toptab .sitemenu {
+  position: absolute;
+  left: 100px;
+  display: flex;
+  flex-direction: row;
+}
+toptab li {
+  width: 96px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  list-style-type: none;
+}
+toptab .currentPage {
+  background: #ffffff;
+}
+toptab a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+toptab .currentPageA {
+  color: #000000;
+}
+toptab .otherPageA {
+  color: #999999;
+}
+
+/* 여기서 부터 nav css */
 nav{
  position: fixed;
  left: 0;
  top: 40px;
  width: 100%;
- height: 40px;
- background: #ffffff;
+ height: 70px;
+ background-color: #ffffff;
 }
 nav .navbar{
  display: flex;
+ padding-left: 100px;
  align-items: center;
  justify-content: space-between;
  height: 100%;
- max-width: 90%;
- background: #ffffff;
- margin: auto;
 }
 nav .navbar .logo a{
   color: #000000;
@@ -77,12 +65,10 @@ nav .navbar .logo a{
   font-weight: 700;
   text-decoration: none;
 }
-nav .navbar .menu{
-  display: flex;
-}
 .navbar .menu li{
+  display: inline;
   list-style: none;
-  margin: 0 70px;
+  margin-right: 70px;
 }
 .navbar .menu li a{
   color: #000000;
@@ -90,35 +76,11 @@ nav .navbar .menu{
   font-weight: 700;
   text-decoration: none;
 }
-#Home{
-  background: #fffff0;
+body {
+  background-color: #1b1b1b;
 }
-#About{
-  background: #f2f2f2;
-}
-#Category{
-  background: #e6e6e6;
-}
-#Latest{
-  background: #fff;
-}
-#Contact{
-  background: #f2f2f2;
-}
-#Feedback{
-  background: #e6e6e6;
-}
-.button a{
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  color: #fff;
-  background: #2980b9;
-  padding: 7px 12px;;
-  font-size: 18px;
-  border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.15);
-}
+
+/* 여기서 부터 footer css */
 footer{
   position : absolute;
   bottom : 0;

@@ -4,30 +4,48 @@ import './App.css';
 function App() {
   return (
   <>
-    <sitenav>
+    <toptab>
       <div>
-        <ui clas = "sitemenu">
-          <li><a href="#">사이트 1</a></li>
-          <li><a href="#">사이트 2</a></li>
+        <ui class = "sitemenu">
+          <li class = "currentPage">
+            <a href="#" class = "currentPageA">
+              사이트 1
+            </a>
+          </li>
+          <li>
+            <a href="#" class = "otherPageA">
+              사이트 2
+            </a>
+          </li>
         </ui>
       </div>
-    </sitenav>
+    </toptab>
     <nav>
       <div class = "navbar">
-        <div class = "logo">
+        <span class = "logo">
           <a href="#">
-            logo
+            ITEM
           </a>
-        </div>
-        <ui class="menu">
-          <li><a href="#">판매등록</a></li>
-          <li><a href="#">캐릭터 거래</a></li>
-          <li><a href="#">아이템 거래</a></li>
-          <li><a href="#">상품권 몰</a></li>
-          <li><a href="#">마이페이지</a></li>
-          <li><a href="#">마일리지 충전</a></li>
-          <li><a href="#">마일리지 출금</a></li>
-        </ui>
+        </span>
+        <span class="menu">
+          <ui>
+            <li><a href="#">판매등록</a></li>
+            <li><a href="#">캐릭터 거래</a></li>
+            <li><a href="#">아이템 거래</a></li>
+            <li><a href="#">상품권 몰</a></li>
+            <li><a href="#">마이페이지</a></li>
+            <li><a href="#">마일리지 충전</a></li>
+            <li><a href="#">마일리지 출금</a></li>
+          </ui>
+        </span>
+        <span class = "navFunction">
+          <ui>
+            <li>profile</li>
+          </ui>
+        </span>
+        <span class = "navSearch">
+          search
+        </span>
       </div>
     </nav>
     <header>
