@@ -1,5 +1,15 @@
 import "./App.css";
-import { myProfile, myHeart, myUnion, searchOnNavbar } from "./srcAssets";
+import {
+  myProfile,
+  myHeart,
+  myUnion,
+  searchOnNavbar,
+  call,
+  face,
+  insta,
+  twitter,
+  youtube,
+} from "./srcAssets";
 // import 변수명 from './srcAssets.파일명'
 
 function App() {
@@ -89,34 +99,79 @@ function App() {
 
       {/* 여기서 부터 Footer 입니다. */}
       <footer>
-        <div className="footerItemLogo">ITEMLOGO</div>
-        <ul className="footerList">
-          <li>이용약관</li>
-          <li>개인정보처리방침</li>
-          <li>청소년보호정책</li>
-          <li>이메일수집거부</li>
-          <li>제휴문의</li>
-          <li>고객센터</li>
-        </ul>
-        <div>
-          <p>
-            계정거래회사명 대표자 : 홍길동 주소 : 서울특별시 종로구 종로 1
-            대표전화 : 1577-8910 E-mail : info@gmail.com 사업자등록번호 :
-            102-81-11870 통신판매업신고번호 제 2023-서울금천-2750호
-          </p>
+        <div className="footerBox">
+          <div className="footerBox_Top">
+            <div className="leftBox">
+              <div className="footerItemLogo">ITEMLOGO</div>
+              <ul className="footerList">
+                <li>
+                  <a href="#">이용약관</a>
+                </li>
+                <li>
+                  <a href="#">개인정보처리방침</a>
+                </li>
+                <li>
+                  <a href="#">청소년보호정책</a>
+                </li>
+                <li>
+                  <a href="#">이메일수집거부</a>
+                </li>
+                <li>
+                  <a href="#">제휴문의</a>
+                </li>
+                <li>
+                  <a href="#">고객센터</a>
+                </li>
+              </ul>
+              <div className="information">
+                <div className="companyName">계정거래회사명</div>
+                <ul className="grayListOne">
+                  <li>대표자 : 홍길동</li>
+                  <li>주소 : 서울특별시 종로구 종로 1</li>
+                  <li>대표전화 : 1577-8910</li>
+                  <li>E-mail : info@gmail.com</li>
+                </ul>
+                <ul className="grayListTwo">
+                  <li>사업자등록번호 : 102-81-11670</li>
+                  <li>통신판매업신고번호 제 2023-서울금천-2750호</li>
+                </ul>
+              </div>
+            </div>
+            <div className="CSCenter">
+              <div className="centerText">고객센터</div>
+              <div className="centerNumber">
+                <img src={call} alt="전화 아이콘" />
+                <div className="number">1577-8190</div>
+              </div>
+              <div className="twentyfourseven">24시간 연중무휴</div>
+            </div>
+          </div>
+          <div className="footerBox_Bottom">
+            <div className="copyRight">ⓒITEMLOGO</div>
+            <ul className="snsIcons">
+              <li>
+                <a href="#">
+                  <img src={face} alt="Facebook Icon" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src={twitter} alt="Twitter Icon" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src={insta} alt="Instagram Icon" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src={youtube} alt="YouTube Icon" />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div>cITEMLOGO</div>
-        <div>
-          <div>고객센터</div>
-          <div>1577-8910</div>
-          <div>24시간 연중무휴</div>
-        </div>
-        <ul>
-          <li>페북</li>
-          <li>트위터</li>
-          <li>인스타</li>
-          <li>유튜브</li>
-        </ul>
       </footer>
     </>
   );
