@@ -7,7 +7,7 @@ function App() {
     <>
       {/* 여기서 부터 헤더 입니다. */}
       <header>
-        {/* <toptab>
+        <toptab>
           <div>
             <ul className="sitemenu">
               <li className="currentPage">
@@ -22,7 +22,7 @@ function App() {
               </li>
             </ul>
           </div>
-        </toptab> */}
+        </toptab>
         <nav>
           <div className="navbar">
             {/* 로고 부분 */}
@@ -60,24 +60,29 @@ function App() {
               <li>
                 <a href="#">
                   <img src={myProfile} alt="프로필 로고" />
-                </a>{" "}
+                </a>
               </li>
               <li>
                 <a href="#">
                   <img src={myHeart} alt="하트 로고" />
-                </a>{" "}
+                </a>
               </li>
               <li>
                 <a href="#">
                   <img src={myUnion} alt="알림 로고" />
-                </a>{" "}
+                </a>
+              </li>
+              {/* 검색 */}
+              <li>
+                <a href="#">
+                  <img
+                    src={searchOnNavbar}
+                    alt="검색 로고"
+                    class="searchButton"
+                  />
+                </a>
               </li>
             </ul>
-
-            {/* 검색 아이콘 */}
-            <a href="#" className="navSearch">
-              <img src={searchOnNavbar} alt="검색 로고" />
-            </a>
           </div>
         </nav>
       </header>
